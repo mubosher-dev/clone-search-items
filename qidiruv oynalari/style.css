@@ -81,6 +81,8 @@
         width: 80%;
         margin:10px auto;
     }
+    .social__networks > div:nth-child(3) input {
+        width:100%;
 }
 
 @media screen and (max-width:500px) {
