@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s ease;
+    text-transform: capitalize;
+}
+
+.social__networks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.red {
+    color:red;
+}
+.blue {
+    color:blue;
+}
+.orange{
+    color:orange;
+}
+.green{
+    color:green;
+}
+
+.yahoo-items h1 {
+    color: blueviolet;
+}
+.social__networks > div {
+    width: 50%;
+    text-align: center;
+}
+.social__networks > div:nth-child(3){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.social__networks > div > input {
+    width: 80%;
+    margin: 10px auto;
+    padding:0 10px;
+    border-radius: 44px;
+    height: 50px;
+    font-size: 1.7rem;
+    outline: none;
+}
+.social__networks > div:nth-child(3) input {
+    width: 40%;
+    margin: 10px auto;
+}
+.social__networks > div:nth-child(3) button {
+    display: inline-block;
+    width: 200px!important;
+    margin: auto;
+}
+.social__networks > div > button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #ff000f;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.social__networks > div > button:hover{
+    color: white;
+    background: #000;
+}
+@media screen and (max-width:991px) {
+    html{
+        overflow-x: hidden;
+    }
+    .social__networks {
+        display: block;
+    }
+    .social__networks > div {
+        width: 80%;
+        margin:10px auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    html{
+        overflow-x: hidden;
+    }
+    .social__networks > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
